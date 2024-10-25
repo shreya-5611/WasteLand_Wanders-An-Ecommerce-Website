@@ -1,0 +1,56 @@
+/* Set the background color of the page to light grey */
+body {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the page header */
+  h1 {
+    font-size: 36px;
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  /* Style the table header */
+  th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style the table rows */
+  td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Style the table alternate rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the "No results found" message */
+  td[colspan='3'] {
+    text-align: center;
+  }
+  .reply-button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reply-button:hover {
+    background-color: #555;
+  }
+  
