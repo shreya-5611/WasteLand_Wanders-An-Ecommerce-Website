@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Artist Product Selling Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="art.css">
+</head>
+<body>
+	<header>
+		<center><h1>POST YOUR PRODUCT</h1></center>
+	</header>
+
+	<main>
+		<form action="art.php" method="post">
+			<fieldset>
+				<legend>Product Information</legend>
+
+				<label for="product-name">Product Name:</label>
+				<input type="text" id="product-name" name="product-name" required>
+
+				<label for="product-description">Product Description:</label>
+				<textarea id="product-description" name="product-description" rows="4" cols="50" required></textarea>
+
+				<label for="product-price">Product Price:</label>
+				<input type="number" id="product-price" name="product-price" min="0" required>
+
+				<label for="product-image">Product Image:</label>
+				<input type="file" id="product-image" name="product-image" accept="image/*" required>
+			</fieldset>
+
+			
+
+			<button type="submit">Submit Product</button>
+		</form>
+	</main>
+
+	
+</body>
+</html>
