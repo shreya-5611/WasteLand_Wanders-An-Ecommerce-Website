@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="buy.css">
+<body>
+    <div class="container">
+        <h1>Confirm Order</h1>
+        <form action="buy.php" method="post">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No.*</label>
+                <input type="tel" id="phone" name="phone_no" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="address1">Address Line 1*</label>
+                <input type="text" id="address1" name="address_1" required>
+            </div>
+            <div class="form-group">
+                <label for="address2">Address Line 2</label>
+                <input type="text" id="address2" name="address_2">
+            </div>
+            <div class="form-group">
+                <label for="city">City*</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State*</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip Code*</label>
+                <input type="text" id="zip" name="pin_code" required>
+            </div>
+            <button type="submit">Confirm Order</a></button>
+        </form>
+    </div>
+    
+</body>
+</html>

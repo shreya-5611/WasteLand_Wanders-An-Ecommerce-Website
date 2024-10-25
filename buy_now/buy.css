@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f7f7f7;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	margin-top: 0;
+	color: #333;
+	text-align: center;
+}
+
+form {
+	width: 100%;
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	background-color: #f7f7f7;
+	transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+	outline: none;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
+}
+
+button[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	background-color: #333;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+	background-color: #444;
+}
+button a {
+	text-decoration: none; /* removes underline */
+	color: white; /* sets text color to white */
+  }
+  
+@media (max-width: 600px) {
+	.container {
+		padding: 10px;
+	}
+	
+	form {
+		max-width: 100%;
+	}
+}
