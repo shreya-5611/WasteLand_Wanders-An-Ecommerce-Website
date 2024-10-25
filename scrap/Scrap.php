@@ -1,0 +1,621 @@
+<?php session_start();
+// session_destroy();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- custom js file link  -->
+   <script src="scrap.js" defer></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<style>
+   .btn-dark {
+    background-color: #212529;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+
+}
+</style>
+<body>
+    <link rel="stylesheet" href="jkl.css">
+   
+<div class="container">
+
+   <h3 class="title">Scrap Products </h3>
+   <nav>
+      <ul>
+        <li class="left"><a href="user_post.html">Post Your Product</a></li>
+        <li class="right"><a href="my_cart.php">Cart</a></li>
+      </ul>
+    </nav>
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+         <img src="scp8.png" alt="" width="250px" height="250px">
+         <h3> Plastic Chair</h3>
+         <div class="price">&#8377;59</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="scp9.jpeg" alt="" width="250px" height="250px">
+         <h3> Wood Chair</h3>
+         <div class="price">&#8377;89</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="scp10.jpg" alt="" width="250px" height="250px">
+         <h3> Spectacles</h3>
+         <div class="price">&#8377;49</div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="scp11.jpg" alt="" width="250px" height="250px">
+         <h3>Used Tyres</h3>
+         <div class="price">&#8377;129</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="scp12.jpg" alt="" width="250px" height="250px">
+         <h3> Cycle</h3>
+         <div class="price">&#8377;999</div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="scp13.jpg" alt="" width="250px" height="250px">
+         <h3> Metal Clock</h3>
+         <div class="price">&#8377;69</div>
+      </div>
+      <div class="product" data-name="p-7">
+        <img src="scp14.jpeg" alt="" width="250px" height="250px">
+        <h3> Plastic Clock</h3>
+        <div class="price">&#8377;49</div>
+     </div>
+
+     <div class="product" data-name="p-8">
+        <img src="scp15.jpg" alt="" width="250px" height="250px">
+        <h3> Table Fan</h3>
+        <div class="price">&#8377;499</div>
+     </div>
+
+     <div class="product" data-name="p-9">
+        <img src="scp16.png" alt="" width="250px" height="250px">
+        <h3> Ceiling Fan</h3>
+        <div class="price">&#8377;699</div>
+     </div>
+     <div class="product" data-name="p-10">
+        <img src="scp17.jpg" alt="" width="250px" height="250px">
+        <h3> Guiter</h3>
+        <div class="price">&#8377;349</div>
+     </div>
+     <div class="product" data-name="p-11">
+        <img src="scp18.jpeg" alt="" width="250px" height="250px">
+        <h3> Cricket Bat</h3>
+        <div class="price">&#8377;159</div>
+     </div>
+     <div class="product" data-name="p-12">
+        <img src="scp1.jpg" alt="" width="250px" height="250px">
+        <h3> Glass</h3>
+        <div class="price">&#8377;39</div>
+     </div>
+     <div class="product" data-name="p-13">
+        <img src="scp2.png" alt="" width="250px" height="250px">
+        <h3> Cup</h3>
+        <div class="price">&#8377;29</div>
+     </div>
+     <div class="product" data-name="p-14">
+        <img src="scp3.jpg" alt="" width="250px" height="250px">
+        <h3> Can</h3>
+        <div class="price">&#8377;9</div>
+     </div>
+     <div class="product" data-name="p-15">
+        <img src="scp4.jpg" alt="" width="250px" height="250px">
+        <h3> Lantern</h3>
+        <div class="price">&#8377;79</div>
+     </div>
+     <div class="product" data-name="p-16">
+        <img src="scp5.jpg" alt="" width="250px" height="250px">
+        <h3>Used Colour Brushes</h3>
+        <div class="price">&#8377;55</div>
+     </div>
+     <div class="product" data-name="p-17">
+        <img src="scp6.jpg" alt="" width="250px" height="250px">
+        <h3>Used Cassette</h3>
+        <div class="price">&#8377;29</div>
+     </div>
+     <div class="product" data-name="p-18">
+        <img src="scp7.jpg" alt="" width="250px" height="250px">
+        <h3>Fused Bulbs</h3>
+        <div class="price">&#8377;89</div>
+     </div>
+
+   </div>
+
+</div>
+
+<div class="products-preview">
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="scp8.png" alt="" width="250px" height="250px">
+      <h3>Plastic Chair</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This is a one year old Plastic Chair|Broken but its Plastic quality is very good| Set of 2 Broken Chairs.</p>
+      <div class="price">₹59.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Plastic Chair" >
+        <input type="hidden" name="Item_price" value="59" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="scp9.jpeg" alt="" width="250px" height="250px">
+      <h3>Wood Chair</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>2 Broken Wood Chairs are available |The Wood of the Chair is not in a Good Position|(Set of 3 Broken Chairs). </p>
+      <div class="price">₹89.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Wood Chair" >
+        <input type="hidden" name="Item_price" value="89" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="scp10.jpg" alt="" width="300px" height="250px">
+      <h3>Spectacles</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>A Branch of Broken Spectacles|All parts are there|Set of 6 Broken Spectacles.</p>
+      <div class="price">₹49.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Spectacles">
+        <input type="hidden" name="Item_price" value="49" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="scp11.jpg" alt="" width="250px" height="250px">
+      <h3>Used Tyres</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>13-22 Inches High Quality Used Tyres From 13|Scooter,Motor Cycle,Scooty,Car,Truck|</p>
+      <div class="price">₹129.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Used Tyres" >
+        <input type="hidden" name="Item_price" value="129" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="scp12.jpg" alt="" width="250px" height="250px">
+      <h3>Cycle</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>21 inch Black Color Cycle|Hero Sprint 26|The Front Wheel Ring is Completely Bent.</p>
+      <div class="price">₹999.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Cycle" >
+        <input type="hidden" name="Item_price" value="999" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="scp13.jpg" alt="" width="250px" height="250px">
+      <h3> Metal Clock</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Old Broken Casio Wall Clock for sale</p>
+      <div class="price">₹69.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Metal Clock" >
+        <input type="hidden" name="Item_price" value="69" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="scp14.jpeg" alt="" width="250px" height="250px">
+      <h3> Plastic Clock</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Old Broken Ajanta Abstract Metal Quartz Wall Clock(32cm x 32cm x 3.5cm, White).</p>
+      <div class="price">₹49.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Plastic Clock" >
+        <input type="hidden" name="Item_price" value="49" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-8">
+      <i class="fas fa-times"></i>
+      <img src="scp15.jpg" alt="" width="250px" height="250px">
+      <h3> Table Fan</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>10 Year Old Fan | Fan Blades are Fine | Totally Rusted (Set of 3).</p>
+      <div class="price">₹499.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value=" Table Fan" >
+        <input type="hidden" name="Item_price" value="499" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-9">
+      <i class="fas fa-times"></i>
+      <img src="scp16.png" alt="" width="250px" height="250px">
+      <h3>Ceiling Fan</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>4 Year Old CeLLING Fans | The Color has Come Off in Many Places | Fan Blades are Bent.</p>
+      <div class="price">₹699.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Ceiling Fan" >
+        <input type="hidden" name="Item_price" value="699" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-10">
+      <i class="fas fa-times"></i>
+      <img src="scp17.jpg" alt="" width="250px" height="250px">
+      <h3> Guiter</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Yamaha F280 Acoustic Guiter | Totally broken.</p>
+      <div class="price">₹349.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Guiter" >
+        <input type="hidden" name="Item_price" value="349" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-11">
+      <i class="fas fa-times"></i>
+      <img src="scp18.jpeg" alt="" width="250px" height="250px">
+      <h3> Cricket Bat</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Set of 2 Broken Bats | wood quality are good.</p>
+      <div class="price">₹159.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Cricket Bat" >
+        <input type="hidden" name="Item_price" value="159" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-12">
+      <i class="fas fa-times"></i>
+      <img src="scp1.jpg" alt="" width="250px" height="250px">
+      <h3> Glass</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Set of 5 Broken Glasses | Partially Broken.</p>
+      <div class="price">₹39.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Glass" >
+        <input type="hidden" name="Item_price" value="39" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-13">
+      <i class="fas fa-times"></i>
+      <img src="scp2.png" alt="" width="250px" height="250px">
+      <h3>Cup</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Set of 4 Cups | White Cups | Partially Cracked. </p>
+      <div class="price">₹29.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value=" Cup" >
+        <input type="hidden" name="Item_price" value="29" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-14">
+      <i class="fas fa-times"></i>
+      <img src="scp3.jpg" alt="" width="250px" height="250px">
+      <h3> Can</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Set of 36 caps | All Types of Cans.</p>
+      <div class="price">₹9.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Can" >
+        <input type="hidden" name="Item_price" value="9" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-15">
+      <i class="fas fa-times"></i>
+      <img src="scp4.jpg" alt="" width="250px" height="250px">
+      <h3>Lantern</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lalten Village Flame Light Desi Kerosene Lantern Glass LAMP Hanging Traditional Home Decoration Outdoor Camping Light Oil Burning Hanging Lantern | Brown Color | 10 Years Old (Rusted). </p>
+      <div class="price">₹79.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Lantern" >
+        <input type="hidden" name="Item_price" value="79" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-16">
+      <i class="fas fa-times"></i>
+      <img src="scp5.jpg" alt="" width="250px" height="250px">
+      <h3>Used Colour Brushes</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Asian Paint Brush | 5 Years Old | </p>
+      <div class="price">₹55.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Used Colour Brushes" >
+        <input type="hidden" name="Item_price" value="55" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-17">
+      <i class="fas fa-times"></i>
+      <img src="scp6.jpg" alt="" width="250px" height="250px">
+      <h3>Used Cassette</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Set of 100 Cassettes</p>
+      <div class="price">₹29.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Used Cassette" >
+        <input type="hidden" name="Item_price" value="29" >
+   </div>
+</form>
+
+<form action="manage_cart.php" method="POST">
+   <div class="preview" data-target="p-18">
+      <i class="fas fa-times"></i>
+      <img src="scp7.jpg" alt="" width="250px" height="250px">
+      <h3>Fused Bulbs</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Set of 80 Fused Bulbs | No Bulb is Broken onlu Fushed.</p>
+      <div class="price">₹89.00</div>
+      <div class="buttons">
+       
+         <button type="submit" class="btn btn-dark" name="Add_to_cart">Add To Cart</button>
+       </div>
+        
+        <input type="hidden" name="Item_name" value="Fused Bulbs" >
+        <input type="hidden" name="Item_price" value="89" >
+   </div>
+</form>
+
+</div>
+
+</body>
+</html>
+</body>
+</html>
