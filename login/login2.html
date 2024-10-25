@@ -1,0 +1,177 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOGIN PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background: #fbf3ff; */
+            background-image: url('bg1.jpg');
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 23%;
+            background-size: cover;
+            background-position: center;
+        }
+        .container{
+            position:absolute;
+            max-width: 800px;
+            height:500px;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .myrightctn{
+            position: relative;
+            background-color: #FF3CAC;
+            background-image: url(brush.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            border-radius: 25px;
+            height: 100%;
+            padding: 25px;
+            color: rgb(192,192,192);
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .myrightctn header{
+            color: #fff;
+            font-size: 25px;
+            font-weight:700;
+            margin-bottom: 20px;
+        }
+        .myleftctn {
+        position: relative;
+        /* background: var(--bs-secondary-border-subtle); */
+        background-color: rgba(0,0,0, 0.3);
+      
+        border-radius: 25px;
+        height: 100%;
+        padding: 25px;
+        padding-left: 1px;
+        width: 440px;
+}
+        .myleftctn header{
+            color: rgb(244, 242, 247);
+            font-size: 25px;
+            font-weight:700;
+            margin-bottom: 20px;
+        }
+        .row{
+            height: 100%;
+        }
+        .mycard{
+            position: relative;
+            background: #fff;
+            height: 100%;
+            border-radius: 25px;
+            background-color: rgba(255,255,255,0.2);
+            /* box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7); */
+            box-shadow: 0px 10px 15px black;
+        }
+         .box{
+
+            position: relative;
+            margin: 20px;
+            margin-bottom: 100px;
+        } 
+        input.myInput{
+            width: 230px;
+            border-radius: 25px;
+            padding: 10px;
+            padding-left: 50px;
+            border: none;
+            box-shadow:0px 10px 49px -14px rgba(0, 0, 0, 0.7)
+        } 
+        input.btn{
+
+            background: linear-gradient(45deg,#bb36fd,#9b00e8);
+            color: #fff;
+            width: 130px;
+            border: none;
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+        }
+        input.btn:hover{
+            background: linear-gradient(45deg,#c85bff,#b726ff);   
+        }
+        input.btn_out{
+            background: transparent;
+            color: #fff;
+            width: 120px;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+        }
+        input.btn_out:hover{
+            border:2px solid #bbadc2;
+        }
+        h1{
+            font-size: 20px;
+            color: beige;
+        }
+        a{
+            text-decoration: none;
+                color: #fbfbfb;
+        }
+    </style>
+    <div class="container">
+        <div class="mycard">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="myleftctn">
+                        <form class="myform text-center" action="login.php" method="post">
+                            <header>WELCOME TO SCRAPYARD</header>
+                            <br>
+                            <div class="form-group">
+                                
+                                <input type="text" class="myInput" placeholder="Enter your email" id="email" name="email" required>
+                                <div class="invalid-feedback">PLEASE FILL OUT THIS FIELD</div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                              
+                                <input type="password" class="myInput" placeholder="Enter password" name="password" id="password" required>
+                                <div class="invalid-feedback">PLEASE FILL OUT THIS FIELD</div>
+                            </div>
+
+                            <br>
+                            <b><h1>New to our website?<a href="signup.html" >Sign Up</a></h1></b>
+                            <br>
+                            <input type="submit" class="btn" value="LOGIN">
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myrightctn">
+                        <div class="box"><header>CREATIVE SCRAPYARD</header>
+                            <P>Creative scrapyard is a website where you can sell your scrap products ,you can purchase those .You can also turn them into a creative one and can sell them here.Raw materials of art and craft are also available in our website</P>
+                            <input type="button" class="btn_out" value="Learn more">
+                        </div>
+                    </div>    
+                </div>  
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  </body>
+</html>

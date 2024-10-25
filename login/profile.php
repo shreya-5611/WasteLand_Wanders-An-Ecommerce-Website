@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Details</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>User Details</h1>
+	</header>
+
+	<main>
+		<div class="user-card">
+			<?php
+				// Get user details from database
+            $host = 'localhost';
+            $user = 'root';
+            $password_db = '';
+            $dbname = 'ww';
+            $conn = mysqli_connect($host, $user, $password_db, $dbname);
+
+
+				// Check connection
+				if ($conn->connect_error) {
+					die("Connection failed: " . $conn->connect_error);
+				}
+
+				// Get user details
+				$email = $_POST["email"];
+				$sql = "SELECT * FROM signup WHERE email='$email'";
+				$result = $conn->query($sql);
+
+				if ($result->num_rows > 0) {
+					// Display user details
+					$row = $result->fetch_assoc();
+					echo "<h2>Welcome " . $row["name"] . "!</h2>";
+					echo "<p><strong>Email:</strong> " . $row["email"] . "</p>";
+					echo "<p><strong>Phone Number:</strong> " . $row["phone_no"] . "</p>";
+					echo "<p><strong>Address:</strong> " . $row["address"] . "</p>";
+					echo "<p><strong>Pincode:</strong> " . $row["pincode"] . "</p>";
+				} else {
+					echo "<p>User details not found.</p>";
+				}
+
+				$conn->close();
+			?>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 My Website</p>
+	</footer>
+</body>
+</html>

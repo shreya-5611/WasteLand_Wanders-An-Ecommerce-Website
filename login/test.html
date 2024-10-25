@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+  position: relative;
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav li:hover > ul {
+  display: block;
+}
+
+nav .dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+nav .dropdown li {
+  display: block;
+  width: 100%;
+}
+
+nav .dropdown li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+}
+
+nav .dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+</style>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#">Login</a>
+            <ul>
+              <li><a href="#">User</a></li>
+              <li><a href="#">Artist</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+</body>
+</html>

@@ -1,0 +1,239 @@
+
+        * {
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	/* background:linear-gradient(to right, #43cea2 ,#185a9d) */
+}
+.bg-light {
+	background-color:rgba(0,0,0,0.3)!important;
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+    color: #ffffff;
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.534),
+    3px 3px 0px rgba(0, 0, 0, 0.534),
+    6px 6px 0px rgba(0, 0, 0, 0.534);
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+    color: #eceaef;
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.534),
+    1px 1px 1px rgba(0, 0, 0, 0.534),
+    1px 1px 1px rgba(0, 0, 0, 0.534);
+	
+    
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: darkorange;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #000;
+	margin-top: 15px;
+}
+.navbar-nav a {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+	color: #fd8802;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #eeff03;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+ .carousel-inner img {
+        /* opacity: 0.5; */
+		filter: blur(2px);
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+	  .cart {
+		margin: 5px;
+		position: relative;
+		background-color: #fff;
+		color: #212529;
+		font-size: 30px;
+		padding: 5px;
+		border-radius: 4px;
+	  }
+	  
+	  .cartAmount {
+		position: absolute;
+		top: -15px;
+		right: -10px;
+		font-size: 16px;
+		background-color: red;
+		color: white;
+		padding: 3px;
+		border-radius: 3px;
+	  }
+      nav .dropdown ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #e4ba7c;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	  }
+	  
+	  nav .dropdown li {
+		display: block;
+		width: 100%;
+		margin-left: -18%;
+	  }
+	  
+	  nav .dropdown li a {
+		display: block;
+		padding: 10px;
+		color: #333;
+		text-decoration: none; 
+		width: 100%;
+	  }
+	  .abc
+	  {width: 100%;}
+	  nav .dropdown li:hover {
+		background-color: none;
+	  }
+	  nav li:hover > ul {
+		display: block;
+	  }
+	  nav .dropdown li:hover {
+		background-color: transparent;
+	  }
+	  
+	  nav .dropdown li:hover a {
+		color: #fff;
+		background-color: #333;
+		background-position: center;
+		border-radius: 16px;
+		
+	  }
+	  
+	  nav .dropdown li:hover a:hover {
+		color: #fff;
+		background-color: #555;
+	  }
+	  
+
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.carousel-caption {
+		bottom: 165px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+   .card{
+	cursor: pointer
+}
+.hd{
+	font-size: 25px;
+	font-weight: 550}
+	.card.hover, .card:hover{
+		box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
+	}
+	.img{
+		margin-bottom: 35px;
+		-webkit-filter: drop-shadow(5px 5px 5px #222);
+		filter: drop-shadow(5px 5px 5px #222)
+	}
+	.card-title{
+		font-weight: 600
+	}
+	button.focus, button:focus{
+		outline: 0;
+		box-shadow: none !important
+	}
+	.ft{
+		margin-top: 25px
+	}
+	.chk{
+		margin-bottom: 5px
+	}
+	.rck{
+		margin-top: 20px;
+		padding-bottom: 15px
+	}
+	#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    position: relative;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+
+}#contact::before{
+    content: "";
+    position: absolute;
+    background: url('contact2.jpg')no-repeat center center/cover;;
+    height: 93%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+
+}
+
+}
+ 
+
+    
